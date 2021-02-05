@@ -100,6 +100,9 @@ class _SharedPostState extends State<SharedPost> {
                                     size: screenWidth / 2,
                                   ),
                                 )),
+                            SizedBox(
+                              height: 5,
+                            ),
                             Container(
                               child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -109,14 +112,14 @@ class _SharedPostState extends State<SharedPost> {
                                       style: TextStyle(
                                           fontSize: 16,
                                           fontWeight: FontWeight.bold,
-                                          color: Colors.green),
+                                          color: Colors.black),
                                     ),
                                     Text(
                                       "Topic: " + postList[index]['topic'],
                                       style: TextStyle(
                                           fontSize: 16,
                                           fontWeight: FontWeight.bold,
-                                          color: Colors.green),
+                                          color: Colors.black),
                                     ),
                                     Row(
                                       children: [

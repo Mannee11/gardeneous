@@ -131,18 +131,7 @@ class _PostDetailState extends State<PostDetail> {
           Expanded(
             child: SingleChildScrollView(
               child: commentList == null
-                  ?
-                  // ? Flexible(
-                  //     child: Container(
-                  //         child: Center(
-                  //             child: Text(
-                  //     titlecenter,
-                  //     style: TextStyle(
-                  //         fontSize: 18,
-                  //         fontWeight: FontWeight.bold,
-                  //         color: Colors.black),
-                  //   ))))
-                  Container(
+                  ? Container(
                       child: Container(
                           padding: EdgeInsets.all(20.0),
                           child: Center(

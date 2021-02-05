@@ -46,7 +46,7 @@ class _MainScreenState extends State<MainScreen> {
         backgroundColor: Colors.green,
         centerTitle: true,
         title: Text('Main Screen',
-            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black)),
+            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white)),
         actions: <Widget>[
           IconButton(
             icon: Icon(
