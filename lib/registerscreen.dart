@@ -25,7 +25,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
   String _pass = "";
   bool _passwordVisible = false;
   bool _rememberMe = false;
-  bool _autoValidate = false;
+//  bool _autoValidate = false;
   bool _termCondition = false;
 
   @override
@@ -226,11 +226,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
   void _onRegister() async {
     _name = _namecontroller.text;
     _email = _emailcontroller.text;
-    _pass = _pwcontroller.text;
     _phone = _phonecontroller.text;
+    _pass = _pwcontroller.text;
+
     if (_name.length == 0 ||
-        _phone.length == 0 ||
         _email.length == 0 ||
+        _phone.length == 0 ||
         _pass.length == 0 ||
         _termCondition == false) {
       if (_termCondition == false) {
@@ -254,12 +255,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
       pr.style(message: "Registration...");
       await pr.show();
 
-      http.post("https://sopmy520.com/Gardeneous/php/register_user.php/",
+      http.post("http://sopmy520.com/Gardeneous/php/PHPMailer/index.php",
           body: {
             "name": _name,
             "email": _email,
-            "password": _pass,
             "phone": _phone,
+            "password": _pass,
           }).then((res) {
         print(res.body);
         if (res.body == "success") {

@@ -16,6 +16,9 @@ class SplashScreen extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Gardeneous',
+        theme: ThemeData(
+          primaryColor: Colors.green,
+        ),
         home: Scaffold(
           body: Container(
               child: Container(
